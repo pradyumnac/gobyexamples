@@ -1,21 +1,23 @@
 package main
 
 import (
-    "math"
-    "fmt"
+	"fmt"
+	"math"
 )
 
 const s string = "Pradyumna"
 
-func main(){
-    fmt.Println(s)
+func main() {
+	fmt.Println(s)
 
-    const n = 50000
-    fmt.Println(n)
+	const n = 50000
+	fmt.Println(n)
 
-    const m = 5e20/n
-    fmt.Println(m)
-    fmt.Println(int64(m))
+	const m = 5e20 / n
+	// Const has no types until given one
+	fmt.Println(m)
+	fmt.Println(int64(m))
 
-    fmt.Println(math.Sin(m))
+	// Type based on context
+	fmt.Println(math.Sin(m))
 }
